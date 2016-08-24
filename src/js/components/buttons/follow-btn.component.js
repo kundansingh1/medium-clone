@@ -26,6 +26,13 @@ class FollowBtnCtrl {
 					this.user.following = false;
 				}
 			);
+		} else {
+			this._Profile.follow(this.user.username).then(
+				() => {
+					this.isSubmitting = false;
+					this.user.following = true;
+				}
+			);			
 		}
 	}
 
@@ -37,7 +44,7 @@ let FollowBtn = {
 		user  : '='
 	},
 	controller: FollowBtnCtrl,
-	template: 'components/buttons/follow-btn.html'
+	templateUrl: 'components/buttons/follow-btn.html'
 };
 
 export default FollowBtn;
