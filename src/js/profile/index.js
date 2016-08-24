@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import angular from 'angular';
 
 // Create the module where our functionality can attach to
@@ -10,6 +12,7 @@ profileModule.config(ProfileConfig);
 // Controllers
 import ProfileCtrl from './profile.controller';
 profileModule.controller('ProfileCtrl', ProfileCtrl);
+
 
 
 export default profileModule;

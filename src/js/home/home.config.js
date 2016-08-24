@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 function HomeConfig($stateProvider) {
   'ngInject';
 
@@ -7,9 +9,9 @@ function HomeConfig($stateProvider) {
     controller: 'HomeCtrl',
     controllerAs: '$ctrl',
     templateUrl: 'home/home.html',
-    title: 'Home'
+    title: 'Instavans Trip Tracker'
   });
 
-};
+}
 
 export default HomeConfig;

@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 import angular from 'angular';
 
 // Import our app config files
@@ -14,6 +16,8 @@ import './home';
 import './profile';
 import './article';
 import './services';
+import './auth';
+import './settings';
 
 
 // Create and bootstrap application
@@ -25,7 +29,9 @@ const requires = [
   'app.home',
   'app.profile',
   'app.article',
-  'app.services'
+  'app.services',
+  'app.auth',
+  'app.settings'
 ];
 
 // Mount on window for testing
